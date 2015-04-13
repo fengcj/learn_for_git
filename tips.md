@@ -32,25 +32,60 @@ When run this command come with a error about "ssh:connect to host github.com po
 
 step3: New a text file,can be whatever you like,such as array.java, array.py, array.js or array.txt.
 ```sh
-       $ echo this is a simple text file > array.txt
+        $ echo this is a simple text file > array.txt
 ```
 
 step4: Add this new file to your local stage
 ```sh
-      $ git add array.txt
+        $ git add array.txt
 ```
 
 step5: Commit thie new file to your local branch with comment
 ```sh
-     $ git commit -m "add array.txt file"
+        $ git commit -m "add array.txt file"
 ```
 
 step6: Push your local branch to github(which is a remote repository)
 ```sh
-     $ git push origin master
+        $ git push origin master
 ```
 
+## Branch
+step1: Create a new branch named "dev" and switch from main branch "master" to it.
+```sh
+   	    $ git branch dev
+        $ git checkout dev
+```
+or
+```sh
+        $ git checkout -b dev
+```
+Now, there are two branchs, "dev" and "master", you can use this command to see branchs:
+```sh
+        $ git branch
+```
+step2: Modify at the "dev" branch, such as add a new line to array.txt file, then add and commit this file
+```sh
+        $ echo create a new branch is fast >> array.txt
+        $ git add array.txt
+        $ git commit -m "add a new line to array.txt"
+```
+step3: Switch to "master" branch and verify the content of array.txt
+```sh
+        $ git checkout master
+        $ cat array.txt
+```
+and you will see the new line "create a new branch is fase" in not in array.txt file. Because we don't merge this two branch.
 
+step4: Merge "dev" to "master"
+```sh
+       $ git merge dev
+```
+
+strp5: Delete the "dev" branch
+```sh
+       $ git branch -d dev
+```
 
 
 
