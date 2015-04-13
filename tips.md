@@ -18,73 +18,37 @@ Also thanks those people who make the open source more excellent and the world m
 
 ## Common steps
    
-    Step1: create the repository at the github, best initialize the repository with a README file
+    Step1: create the repository at the github, best initialize the repository with a README file.
     Step2: clone the repository to your own computer
-    	```sh
-    	git clone https://github.com/fengcj/learn_for_git.git
-    	```
+```sh
+    	$ git clone https://github.com/fengcj/learn_for_git.git
+```
     	or
-    	```sh
-    	git clone git@github.com:fengcj/learn_for_git.git
-    	```
+```sh
+    	$ git clone git@github.com:fengcj/learn_for_git.git
+```
 
     	when run this command come with a error about "ssh:connect to host github.com port  22 : Bad file numberr",this means you need set a proxy using fellow command:
-    	```sh
-    	git config --global http.proxy http://yourproxy
-    	git config --global https.proxy https://yourproxy
-        ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```sh
+    	$ git config --global http.proxy http://yourproxy
+    	$ git config --global https.proxy https://yourproxy
+```
+    step3: new a text file,can be whatever you like,such as array.java, array.py, array.js or array.txt.
+```sh
+        $ echo this is a simple text file > array.txt
+```
+    step4: add this new file to your local stage
+```sh
+        $ git add array.txt
+```
+    step4: commit thie new file to your local branch with comment
+```sh
+        $ git commit -m "add array.txt file"
+```
+    step5: push your local branch to github(remote)
+```sh
+        $ git push origin master
+```
 
 
 
