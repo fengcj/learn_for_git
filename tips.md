@@ -2,53 +2,59 @@
 
 This note is write at the time I learn git from Liaoxuefeng's [website], thanks Mr liao for his remarkable course about git.
 Also thanks those people who make the open source more excellent and the world more beautiful.
- 
-
-
 
 #  Preparations
 
    - Install [git] 
    - Register at [github]
 
-
-
-
 #  Note
+
 
 ## Common steps
    
-    Step1: create the repository at the github, best initialize the repository with a README file.
-    Step2: clone the repository to your own computer
+Step1: create the repository at the github, best initialize the repository with a README file.
+
+Step2: clone the repository to your own computer
 ```sh
     	$ git clone https://github.com/fengcj/learn_for_git.git
 ```
-    	or
+or
 ```sh
     	$ git clone git@github.com:fengcj/learn_for_git.git
 ```
 
-    	when run this command come with a error about "ssh:connect to host github.com port  22 : Bad file numberr",this means you need set a proxy using fellow command:
+When run this command come with a error about "ssh:connect to host github.com port  22 : Bad file numberr",this means you need set a proxy using fellow command:
 ```sh
     	$ git config --global http.proxy http://yourproxy
     	$ git config --global https.proxy https://yourproxy
 ```
-    step3: new a text file,can be whatever you like,such as array.java, array.py, array.js or array.txt.
+
+step3: New a text file,can be whatever you like,such as array.java, array.py, array.js or array.txt.
 ```sh
-        $ echo this is a simple text file > array.txt
+       $ echo this is a simple text file > array.txt
 ```
-    step4: add this new file to your local stage
+
+step4: Add this new file to your local stage
 ```sh
-        $ git add array.txt
+      $ git add array.txt
 ```
-    step4: commit thie new file to your local branch with comment
+
+step5: Commit thie new file to your local branch with comment
 ```sh
-        $ git commit -m "add array.txt file"
+     $ git commit -m "add array.txt file"
 ```
-    step5: push your local branch to github(remote)
+
+step6: Push your local branch to github(which is a remote repository)
 ```sh
-        $ git push origin master
+     $ git push origin master
 ```
+
+
+
+
+
+
 
 
 
