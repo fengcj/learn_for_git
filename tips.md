@@ -13,9 +13,9 @@ Also thanks those people who make the open source more excellent and the world m
 
 ## Common steps
    
-Step1: create the repository at the github, best initialize the repository with a README file.
+Step1: Create the repository at the github, best initialize the repository with a README file.
 
-Step2: clone the repository to your own computer
+Step2: Clone the repository to your own computer
 ```sh
     	$ git clone https://github.com/fengcj/learn_for_git.git
 ```
