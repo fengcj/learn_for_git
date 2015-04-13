@@ -16,8 +16,25 @@ Also thanks those people who make the open source more excellent and the world m
 
 #  Note
 
+## Common steps
+   
+    Step1: create the repository at the github, best initialize the repository with a README file
+    Step2: clone the repository to your own computer
+    	```sh
+    	git clone https://github.com/fengcj/learn_for_git.git
+    	```
+    	or
+    	```sh
+    	git clone git@github.com:fengcj/learn_for_git.git
+    	```
 
-	### First 
+    	when run this command come with a error about "ssh:connect to host github.com port  22 : Bad file numberr",this means you need set a proxy using fellow command:
+    	```sh
+    	git config --global http.proxy http://yourproxy
+    	git config --global https.proxy https://yourproxy
+        ```
+
+
 
 
 
