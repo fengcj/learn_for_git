@@ -82,15 +82,36 @@ step4: Merge "dev" to "master"
        $ git merge dev
 ```
 
-strp5: Delete the "dev" branch
+step5: Delete the "dev" branch
 ```sh
-       $ git branch -d dev
+    $ git branch -d dev
 ```
 
+After step2, if you don't want merge "dev" to "master", you just want push "dev" to github, you can run this command:
+```sh
+    $ git push origin dev
+```
+then you can find there is a "dev" branch at you github project page.
 
 
 
 
+## Github
+
+When you clone project on github to your local, you can just see "master" branch by default. If you want to use other branch abuout this project,like "dev" branch, you can run this command:
+```sh
+     $ git checkout -b dev origin/dev
+```
+then you can run 
+```sh
+     $ git pull
+```
+to varify the local "dev" and remote "origin/dev" had been linked. 
+
+If this command prompt "Already up-to-date", means they had been linked, if prompt "There is no tracking information for the current branch.Please specify which branch you want to merge with.", means you need to run this command:
+```sh
+     $ git branch --set-upstream-to=origin/dev
+```
 
 
 
